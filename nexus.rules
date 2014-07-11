@@ -1,0 +1,2 @@
+ACTION=="add", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4ee1", RUN+="/lib/udev/starter.sh $name $env{ID_MODEL}" #change to ID_SERIAL for uniqueness, but returned name is ugly
+ACTION=="add", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4ee2", RUN+="/lib/udev/starter.sh $name $env{ID_MODEL}"
