@@ -12,5 +12,5 @@ sleep 10
 declare -a arr=("DCIM" "Pictures")
 for i in "${arr[@]}"
 do
-   rsync -a --exclude="cache" --exclude=".*" "$ppath/$i" "$cpath"
+   rsync -a --exclude="cache" --exclude="thumbnails" --exclude=".*" "$ppath/$i" "$cpath"
 done
